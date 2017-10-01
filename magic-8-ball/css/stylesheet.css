@@ -1,0 +1,61 @@
+body{
+    min-width: 1200px;
+    margin: auto;
+	background-color: red;
+}
+.eight{
+    color: white;
+    background-color: red;
+    border: 1px black solid;
+    margin-left: -22px;
+}
+
+h1{
+    font-family: monospace;
+    font-size: 40px;
+    width: 175px;
+    margin: auto;
+    background-color: azure;
+    margin-top: 20px;
+    border-radius: 20px;
+    box-shadow: 10px 30px 130px 1px white;
+    overflow: hidden;
+}
+
+h2, input, button {
+  font-family: sans-serif;
+  font-size: 15px;
+  
+}
+h3{
+    margin-top: 100px;
+    font-family: fantasy;
+	color: white;
+}
+
+input {
+  width: 240px;
+}
+.center{
+    text-align: center;
+}
+
+.input1{
+    border: 1px lightblue solid;
+    text-align: center;
+}
+
+#answerButton{
+    background-color: greenyellow;
+    border: 1px black solid;
+    line-height: 30px;
+}
+
+#answerButton:hover{
+    cursor: pointer;
+    background-color: limegreen;
+    color: white;
+}
+p{
+	color: white;
+}
