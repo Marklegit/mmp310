@@ -1,0 +1,186 @@
+body{
+	background-color: rgb(191, 157, 114);
+	min-width: 1400px;
+}
+.new-card{
+	width: 200px;
+	height: 320px;
+	float: left;
+	text-align: center;
+	color: white;
+}
+.new-card:hover{
+	box-shadow: 2px 2px 32px 10px white;
+}
+.new-card img{
+	table-layout: fixed;
+	float: left;
+	margin: 10px;
+	width: 180px;
+}
+.search-1{
+	cursor: pointer;
+	background-color: dimgray;
+	color:gold;
+	font-size: 20px;
+}
+.search-1:hover{
+	color: white;
+}
+.search-bar{
+	width: 300px;
+}
+a{
+	color: red;
+	text-decoration: none;
+}
+a:hover{
+	color: white;
+	text-transform: uppercase;
+}
+.sort{
+	margin-left: 40px;
+	padding-top: 10px;
+}
+.type-cat:hover{
+	box-shadow: 0px 0px 22px 4px white;
+}
+
+.rarity-cat:hover{
+	box-shadow: 0px 0px 22px 4px white;
+}
+
+.class-cat:hover{
+	box-shadow: 0px 0px 22px 4px white;
+}
+.sort p{
+	font-family: sans-serif;
+	font-size: 30px;
+	border-bottom: 1px solid black;
+	width: 400px;
+	color: yellow;
+	padding-bottom: 4px;
+	text-shadow: 2px 2px 2px black;
+}
+.sort button{
+	font-family: monospace;
+	font-size: 14px;
+	cursor: pointer;
+	background-color: darkcyan;
+	color: white;
+}
+.sort button:hover{
+	color: gold;
+	background-color: black;
+	font-size: 15px;
+}
+.header-banner{
+	opacity: 0.9;
+}
+h1{
+	text-align: center;
+	font-family: monospace;
+	font-size: 40px;
+	color: Gold;
+	background-color: black;
+	opacity: 0.8;
+}
+h2{
+	
+}
+.content-cards{
+	margin: auto;
+	height: 800px;
+}
+.display-cards-right{
+	background-color: rgb(102, 102, 102);
+	border: 8px solid rgb(87, 57, 26);
+	float: right;
+	width: 1000px;
+	height: 900px;
+	margin-top: 60px;
+	padding: 10px;
+	margin-left: 20px;
+	margin-top: -350px;
+}
+.display-cards-right:hover{
+	box-shadow: 0px 0px 22px 4px white;
+}
+.display-cards-right p{
+	text-align: center;
+	color: white;
+	font-family: cursive;
+	font-size: 30px;
+	margin-top: -10px;
+}
+.deck-display{
+	background-color: rgb(102, 102, 102);
+	border: 8px solid rgb(87, 57, 26);
+	height: 580px;
+	width: 400px;
+	margin-left: 24px;
+	margin-top: -10px;
+	overflow: scroll;
+	float: left; 
+	opacity: 0.8;
+}
+.deck-display:hover{
+	box-shadow: 0px 0px 22px 4px white;
+}
+
+.deck-display p{
+	font-family: monospace;
+	font-size: 30px;
+	text-align: center;
+	background-color: gold;
+	margin-top: -1px;
+	opacity: 0.9;
+}
+.add{
+	background-color: greenyellow;
+	border-radius: 50%;
+	font-size: 14px;
+	font-family: cursive;
+}
+.add:hover{
+	cursor: pointer;
+	box-shadow: 0px 0px 22px 4px gold;
+}
+#card-image{
+	width: 200px;
+	margin-bottom: 2px;
+}
+#card-image:hover{
+	box-shadow: 0px 0px 22px 4px orange;
+}
+#card-name{
+	color: white;
+	margin-bottom: 2px;
+}
+#card-type{
+	color: white;
+	margin-bottom: 2px;
+}
+#card-faction{
+	color: white;
+	margin-bottom: 2px;
+}
+#card-rarity{
+	color: white;
+	margin-bottom: 2px;
+} 
+#player-class{
+	color: white;
+	margin-bottom: 2px;
+} 
+#artist-name{
+	color: white;
+	margin-bottom: 10px;
+}
+	
+footer{
+	background-color: dimgray;
+	text-align: center;
+	color: white;
+}
+

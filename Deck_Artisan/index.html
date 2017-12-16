@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Deck Artisan</title>
+</head>
+
+<body>
+<div class="header-banner">
+	<img src="images/Deck_Artisan_Banner.jpg" width="100%" alt="DA-banner">
+</div>
+
+<h1>Deck Artisan <a href="#build">Click to focus view</a></h1>
+
+
+<div id="build" class="sort">
+<input class="search-bar" type="text" name="search" placeholder="Search by name...">
+<input class="search-1" type="submit" value="Search">
+
+	<p class="type-cat">TYPE: <button id="hero">Hero</button> <button id="minion">Minion</button> <button id="spell">Spell</button> <button id="weapon">Weapon</button></p>
+
+	<p class="rarity-cat">RARITY: <button id="free">Free</button> <button id="common">Common</button> <button id="rare">Rare</button> <button id="epic">Epic</button> <button id="legendary">Legendary</button></p>
+
+	<p class="class-cat">CLASS: <button id="druid">Druid</button> <button id="hunter">Hunter</button> <button id="mage">Mage</button> <button class="paladin">Paladin</button> <button id="priest">Priest</button> <button id="rogue">Rogue</button> <button id="shaman">Shaman</button> <button id="warlock">Warlock</button> <button id="warrior">Warrior</button></p>
+</div>
+	
+<div class="content-cards">
+	<div class="display-cards-right">
+		<p>Results:</p>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	
+		<!--<button id="nextCard">Loading Data...</button>-->
+		
+		
+	</div>
+	<div class="deck-display">
+		<p>Recently Added()</p>
+		<div class="cards-added">
+			
+		</div>
+	</div>
+</div>
+
+<p>
+<a href="http://jigsaw.w3.org/css-validator/check/referer">
+    <img style="border:0;width:88px;height:31px"
+        src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+        alt="Valid CSS!">
+    </a>
+</p>
+        
+
+<script src=app.js></script>
+<footer>
+	<p>FOOTER</p>
+</footer>
+</body>
+</html>
