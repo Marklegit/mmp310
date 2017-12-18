@@ -14,7 +14,7 @@ body{
 }
 .new-card img{
 	table-layout: fixed;
-	float: left;
+	margin-bottom:0;
 	margin: 10px;
 	width: 180px;
 }
