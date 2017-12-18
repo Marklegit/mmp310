@@ -44,26 +44,30 @@ function flattenCards(data){
 }
 
 var deck = document.querySelector(".display-cards-right");
-
-$(document).ready(function () {
-	getCardData()
+$(document).ready(function() {
+    getCardData()
 		.done(function (data) {
-			$("#nextCard").text("Next");
-			cards = flattenCards(data);
-			console.log(cards);
+        cards = flattenCards(data);
+        console.log(cards);
+    });
+});
+			
+function loadCards(category, value) {
 			var subset = [];
 			for (let i = 0; i < cards.length; i++) {
-				if (cards[i].rarity == "Free") {
+				if (cards[i][category] == value) {
 					subset.push(cards[i]);
 				}
 			}
-		console.log(subset);
 			for (let i = 0; i < 10; i++) {
 				var card = subset[Math.round(Math.random() * subset.length)];
 				var cardWrap = document.createElement('div');
 				cardWrap.classList.add("new-card");
-				var img = document.createElement('img');
-				img.src = card.img;
+				if (card.img) {
+                    var img = document.createElement('img');
+				    img.src = card.img;
+                    cardWrap.appendChild(img);
+                }
 				
 				var name = document.createElement('div');
 				name.textContent = card.name;
@@ -74,16 +78,31 @@ $(document).ready(function () {
 				var faction = document.createElement('div');
 				faction.textContent = card.faction;
 				
+				var rarity = document.createElement('div');
+				rarity.textContent = card.rarity;
+					
+				var playerClass = document.createElement('div');
+				playerClass.textContent = card.playerClass;
 				
+				var free = document.createElement('div');
+				free.textContent = card.free;
 				
-				cardWrap.appendChild(img);
 				cardWrap.appendChild(name);
 				cardWrap.appendChild(type);
 				cardWrap.appendChild(faction);
+				cardWrap.appendChild(rarity);
+				cardWrap.appendChild(playerClass);
+				cardWrap.appendChild(free);
 				deck.appendChild(cardWrap);
 			}
-		});
-});
+}
 
-
+var buttons = document.getElementsByClassName("searchbutton");
+for (let i = 0; i < buttons.length; i++) {
+    buttons[i].addEventListener("click", function() {
+        if (cards.length > 0) {
+            loadCards(this.name, this.id);
+        }
+    });
+}
 
