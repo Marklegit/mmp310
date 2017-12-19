@@ -1,0 +1,60 @@
+body{
+	background-color: beige;
+}
+h1{
+	text-align: center;	
+	font-family: fantasy;
+	font-size: 70px;
+	color: brown
+}
+#container{
+	width: 400px;
+	margin: auto;
+}
+.add-message{
+	margin-bottom: 30px;
+}
+.message{
+	background-color: white;
+	border: 1px solid black;
+}
+#new-message{
+	width: 393px;
+	height: 60px;
+	font-size: 50px;
+}
+.text{
+	font-size: 60px;
+	font-family: fantasy;
+	text-align: center;
+	margin: 0;
+}
+.user{
+	font-size: 20px;
+	color: plum;
+	font-family: cursive;
+	margin: 0;
+	border-top: 1px solid blue;
+}
+#new-message{
+}
+#submit-message{
+	background-color: green;
+	color: white;
+	font-family: sans-serif;
+	font-size: 20px;
+	width: 50%;
+}
+button:hover{
+	cursor: pointer;
+}
+.delete{
+	float: right;
+	background-color: red;
+	color: white;
+	font-family: sans-serif;
+	font-size: 20px;
+	width: 30%;
+	border-radius: 50%;
+	margin-top: -15px;
+}
